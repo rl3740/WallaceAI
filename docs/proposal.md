@@ -13,7 +13,9 @@ We will be using some graph algorithms like, Dijktra's Algorithm, Prim-Dijktra-J
 
 ## Evaluation Plan
 
-We will work really hard (Finish this part)
+The baseline of the evaluation of the project will be whether the person is able to reach the destination or not.
+
+In another paragraph, describe what qualitative analysis you will show to verify the project works
 
 ## Appointment with the Instructor
 
