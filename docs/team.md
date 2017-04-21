@@ -12,5 +12,5 @@ title:  Team
 ## Kunyu Zhang
 ***UCI Net ID***: kunyuz1
 
-## USER 3
-***UCI Net ID***: ucinetid
+## Zhenhai Wu
+***UCI Net ID***: zhenhaiw
