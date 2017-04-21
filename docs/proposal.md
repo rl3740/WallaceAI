@@ -5,7 +5,7 @@ title:  Proposal
 
 ## Summary of the Project
 
-The idea of our project is solving some simple smart mazes, which Navigator and some smart tools collecting AI will be involved. The input will be a complete maze, and the output will be the character reaching the destination in small amount of time. During this process, the character will be collecting some tools in order to help him go through some parts of the maze. Moreover, the smart navigator will guide him to where he supposes to be.
+The idea of our project is creating and solving some simple smart mazes, which Navigator and some smart tools collecting AI will be involved. The input will be player’s command. The character will explore a complete maze, and the output will be the character reaching the destination in small amount of time. During this process, the character will be collecting some tools in order to help him go through some parts of the maze. Moreover, the smart navigator will guide him to where he supposes to be. For example, the character will choose the best way from home to everywhere.
 
 ## AI/ML Algorithms
 
