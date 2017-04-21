@@ -13,9 +13,10 @@ We will be using some graph algorithms like, Dijktra's Algorithm, Prim-Dijktra-J
 
 ## Evaluation Plan
 
-The baseline of the evaluation of the project will be whether the person is able to reach the destination or not.
+Numeric metrics: We will calculate the ROC curve and AUC value. The AUC value becomes larger means the performance of our data becomes better. We should check the accuracy of our algorithm by using plenty of test sets. 
 
-In another paragraph, describe what qualitative analysis you will show to verify the project works
+Baselines: Our algorithm should find the destination correctly and generate the shortest path quickly. 
+
 
 ## Appointment with the Instructor
 
