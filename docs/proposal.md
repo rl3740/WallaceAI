@@ -9,7 +9,7 @@ The idea of our project is solving some simple smart mazes, which Navigator and 
 
 ## AI/ML Algorithms
 
-We will be using some graph algorithms like, Dijktra's Algorithm, Prim-Dijktra-Jarnik Algorithm, and dynamic programming for finding the minimum spanning tree.
+We will be using some graph algorithms like, Dijktra's Algorithm, Prim-Dijktra-Jarnik Algorithm, and dynamic programming for finding the minimum spanning tree. For the ML alogrithm, nerual network, random froest, decision tree will be applied.
 
 ## Evaluation Plan
 
