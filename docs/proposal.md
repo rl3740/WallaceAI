@@ -14,17 +14,17 @@ We will be using some graph algorithms like, Dijktra's Algorithm, Prim-Dijktra-J
 ## Evaluation Plan
 Quantitative evaluation: 
 
-Numeric metrics: We will calculate the ROC curve and AUC value for our data. Once the AUC value becomes larger and larger,  the performance of our data will become better and better. Also, we should check the accuracy of our algorithm. We need to check whether the start block and end block correct. The test sets will help us to test the accuracy of our project as well. 
+- Numeric metrics: We will calculate the ROC curve and AUC value for our data. Once the AUC value becomes larger and larger,  the performance of our data will become better and better. Also, we should check the accuracy of our algorithm. We need to check whether the start block and end block correct. The test sets will help us to test the accuracy of our project as well. 
 
-Baselines: Our algorithm should find the destination and generate the shortest path correctly and quickly. 
+- Baselines: Our algorithm should find the destination and generate the shortest path correctly and quickly. 
 
 Qualitative evaluation:
 
-Simple example cases: Our idea should work on resolving a maze and finding the best way to the end of the maze. The output will be the length of the shortest path and the rewards for the character.
+- Simple example cases: Our idea should work on resolving a maze and finding the best way to the end of the maze. The output will be the length of the shortest path and the rewards for the character.
 
-Error Analysis and Introspection: If the character meets the fire or die in the maze, which means our algorithm has errors. We should check our algorithm again and again. Also, we should use the mean squared error to test the performance of our data.
+- Error Analysis and Introspection: If the character meets the fire or die in the maze, which means our algorithm has errors. We should check our algorithm again and again. Also, we should use the mean squared error to test the performance of our data.
 
-Super-Impressive example: The player gives a command like “find the nearest tree” or “find a sheep near the house.” Our navigator should search for and locate the “tree” or the “sheep” correctly and give the character the best way to the “tree” or the “sheep.”
+- Super-Impressive example: The player gives a command like “find the nearest tree” or “find a sheep near the house.” Our navigator should search for and locate the “tree” or the “sheep” correctly and give the character the best way to the “tree” or the “sheep.”
 
 
 
