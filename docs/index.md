@@ -3,7 +3,7 @@ layout: default
 title:  Home
 ---
 
-_Add your text here_
+Our project aims to create a Minecraft version of Prison Break!
 
 
 What's Markdown (`.md`)?
