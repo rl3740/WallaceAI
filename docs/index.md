@@ -3,7 +3,8 @@ layout: default
 title:  Home
 ---
 
-Our project aims to create a Minecraft version of Prison Break!
+Prison Break -- Minecraft version!
+![alt text](https://i.ytimg.com/vi/O4ZVF56MEAY/maxresdefault.jpg)
 
 
 What's Markdown (`.md`)?
