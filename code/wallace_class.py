@@ -35,6 +35,10 @@ class Wallace(object):
         self.all_item = all_states
         self.item = all_states[self.current_room]
 
+        self.best = -999999
+        self.best_action = []
+        self.current_action = []
+
 # ------------------------------- Not important -----------------------------------------
     @staticmethod
     def is_solution(reward):
@@ -57,6 +61,7 @@ class Wallace(object):
 
         self.all_item = all_states
         self.item = all_states[self.current_room]
+        self.current_action = []
 
     # @staticmethod
     # def get_obj_locations(agent_host):
@@ -101,7 +106,7 @@ class Wallace(object):
 
     def teleport(self, agent_host, teleport_x, teleport_z):
         """Directly teleport to a specific position."""
-        tp_command = "tp " + str(teleport_x)+ " 15 " + str(teleport_z)
+        tp_command = "tp " + str(teleport_x)+ " 12 " + str(teleport_z)
         agent_host.sendCommand(tp_command)
         time.sleep(0.3)
         # good_frame = False
@@ -147,15 +152,17 @@ class Wallace(object):
     def update_inventory(self, action, result, option = "none"):
         if option != "none":
             self.inventory[option] += 1
+            self.current_action.append(option)
             print "(" + action + "," + option + "),",
         else:
             self.inventory[action] += 1
+            self.current_action.append(action)
             print "(" + action + "," + result + "),",
 
     def update_status(self, room):
         self.current_room = room
         self.item = self.all_item[room]
-        print self.current_room
+        print self.current_room,
 
     # def update_item(self, item):
     #     print self.item, item
@@ -190,13 +197,13 @@ class Wallace(object):
             elif action == "iron_block":
                 self.update_inventory(action, "Succeed")
                 self.update_inventory(action, "Fail", "air")
-                self.teleport(agent_host, 15, 15) #TODO
+                self.teleport(agent_host, 25, 15)
                 self.update_status("air_room")
                 self.end_action(agent_host)
             elif action == "ladder":
                 self.update_inventory(action, "Succeed")
                 self.update_inventory(action, "Fail", "lava")
-                self.teleport(agent_host, 15, 15) #TODO
+                self.teleport(agent_host, 5, 15)
                 self.update_status("lava_room")
                 self.end_action(agent_host)
         elif self.current_room == "zombies_room":
@@ -247,6 +254,10 @@ class Wallace(object):
         for item, counts in self.inventory.items():
             current_r += rewards_map[item] * counts
 
+        if current_r > self.best:
+            self.best = current_r
+            self.best_action = self.current_action
+        self.current_action = []
         agent_host.sendCommand('quit')
         #time.sleep(0.25)
         return current_r
@@ -327,15 +338,19 @@ class Wallace(object):
         current_r = 0
         is_first_action = True
         next_a = ""
-        while next_a != "end_action":
-            curr_state = self.get_curr_state()
-            possible_actions = self.get_possible_actions(agent_host, is_first_action)
-            next_a = self.choose_action(curr_state, possible_actions, 0)
-            policy.append(next_a)
-            is_first_action = False
-            current_r = self.act(agent_host, next_a)
-        print ' with reward %.1f' % (current_r)
-        return self.is_solution(current_r)
+        # while next_a != "end_action":
+        #     curr_state = self.get_curr_state()
+        #     possible_actions = self.get_possible_actions(agent_host, is_first_action)
+        #     next_a = self.choose_action(curr_state, possible_actions, 0)
+        #     policy.append(next_a)
+        #     is_first_action = False
+        #     current_r = self.act(agent_host, next_a)
+        self.end_action(agent_host)
+        for i in self.best_action:
+            print i + " -> ",
+
+        print ' with reward %.1f' % (self.best)
+        return self.is_solution(self.best)
         # print 'Best policy so far is %s with reward %.1f' % (policy, current_r)
 
     def run(self, agent_host):

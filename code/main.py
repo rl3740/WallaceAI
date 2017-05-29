@@ -31,12 +31,17 @@ if __name__ == '__main__':
     print "n=",n
     wallace.clear_inventory()
 
-
+    expID = "Wallace_q_learning"
 
     for iRepeat in range(num_reps):
-        my_mission = MalmoPython.MissionSpec(world("Fetch boy #" + str(iRepeat)), True)
-        my_mission_record = MalmoPython.MissionRecordSpec()  # Records nothing by default
-        my_mission.requestVideo(800, 500)
+        my_mission = MalmoPython.MissionSpec(world("Wallace " + str(iRepeat)), True)
+        my_mission_record = MalmoPython.MissionRecordSpec("./save_%s-map%d-rep%d.tgz" % (expID, iRepeat, iRepeat))  # Records nothing by default
+        my_mission_record.recordCommands()
+        my_mission_record.recordMP4(20, 400000)
+        my_mission_record.recordRewards()
+        my_mission_record.recordObservations()
+
+        my_mission.requestVideo(1200, 720)
         my_mission.setViewpoint(1)
 
         max_retries = 3

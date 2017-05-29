@@ -82,7 +82,8 @@ def world(seed = "0"):
                 <DrawCuboid x1 = "15" y1= "11" z1= "10" x2= "15" y2= "13" z2= "10" type="sand"/> 
                 <DrawCuboid x1 = "20" y1= "11" z1= "15" x2= "20" y2= "13" z2= "15" type="iron_block"/>
                 <DrawCuboid x1 = "1" y1= "10" z1= "11" x2= "9" y2= "10" z2= "19" type="lava"/>
-
+                <DrawCuboid x1 = "4" y1= "10" z1= "11" x2= "6" y2= "11" z2= "16" type="stone"/>
+                <DrawCuboid x1 = "24" y1= "10" z1= "11" x2= "26" y2= "11" z2= "16" type="stone"/>
                 
                 <DrawItem x='26' y='11' z='26' type="gold_block"/>
                 <DrawItem x='16' y='11' z='26' type="cake"/>
@@ -104,7 +105,7 @@ def world(seed = "0"):
     <AgentSection mode="Survival">
         <Name>Wallace</Name>
         <AgentStart>
-            <Placement x="15" y="10" z="15" yaw="-90"/>
+            <Placement x="15" y="12" z="15" yaw="-90"/>
             <Inventory>
                 <InventoryItem slot="9" type="planks" variant="acacia"/>
                 <InventoryItem slot="10" type="brown_mushroom"/>
@@ -113,6 +114,16 @@ def world(seed = "0"):
             </Inventory>
         </AgentStart>
         <AgentHandlers>
+            <VideoProducer
+            want_depth="0"
+            viewpoint="1">
+                <Width> 1200 </Width>
+                <Height> 720 </Height>
+                <DepthScaling
+                min="0"
+                max="1"
+                autoscale="0"/>
+            </VideoProducer>
             <AbsoluteMovementCommands/>
             <SimpleCraftCommands/>
             <MissionQuitCommands/>
