@@ -3,32 +3,32 @@ layout: default
 title:  Home
 ---
 
-_Add your text here_
+-Prison Break -- Minecraft version!
+ +## Prison Break -- Minecraft version!
+  ![alt text](https://i.ytimg.com/vi/O4ZVF56MEAY/maxresdefault.jpg)
 
 
-What's Markdown (`.md`)?
-
-Markdown is markup that lets you write hypertext (HTML) documents
-in easy-to-read and easy-to-write plain text.
-No angle brackets `<></>` required for
-paragraphs, lists, blockquotes, tables, etc.
-
-
-This is a paragraph (in Markdown). Some more
-text here.
-
-This is another paragraph.
-
-This is a list:
-
-- Orange
-- Apple
-- Blueberry
-
-
-
-Just getting started with Markdown?
-See the [HTML <-> Markdown Quick Reference (Cheat Sheet)][quickref].
-
-
-[quickref]: https://github.com/mundimark/quickrefs/blob/master/HTML.md
+ - Here is our proposal: [Proposal.md][quickref].
+  
+  [quickref]: https://github.com/liran331122/WallaceAI/blob/master/docs/proposal.md
+ -- Here is the Game Rule: [Rule.md][quickref].
+ +- Here is the Game Rule: [Rule.md][quickref2].
+  
+ -[quickref]: https://github.com/liran331122/WallaceAI/blob/master/docs/PrisonBreakRule.md
+ -- Here is code repository: [Code Repository][quickref].
+ +[quickref2]: https://github.com/liran331122/WallaceAI/blob/master/docs/PrisonBreakRule.md
+ +- Here is code repository: [Code Repository][quickref3].
+  
+ -[quickref]: https://github.com/liran331122/WallaceAI/tree/master/code
+ -- Here is Video Summary: [status.md][quickref]
+ +[quickref3]: https://github.com/liran331122/WallaceAI/tree/master/code
+ +- Here is Video Summary: [status.md][quickref4]
+  
+ -[quickref]: https://github.com/liran331122/WallaceAI/blob/master/docs/status.md
+ +[quickref4]: https://github.com/liran331122/WallaceAI/blob/master/docs/status.md
+  
+ -- Here is our team information: [team.md][quickref].
+ +- Here is our team information: [team.md][quickref5].
+  
+ -[quickref]: https://github.com/liran331122/WallaceAI/blob/master/docs/team.md
+ +[quickref5]: https://github.com/liran331122/WallaceAI/blob/master/docs/team.md
