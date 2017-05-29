@@ -15,6 +15,8 @@
 [quickref]: https://github.com/liran331122/WallaceAI/tree/master/code
 - Here is Video Summary: [status.md][quickref]
 
+[quickref]: https://github.com/liran331122/WallaceAI/blob/master/docs/status.md
+
 - Here is our team information: [team.md][quickref].
 
 [quickref]: https://github.com/liran331122/WallaceAI/blob/master/docs/team.md
