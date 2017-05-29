@@ -13,7 +13,7 @@
 - Here is code repository: [Code Repository][quickref].
 
 [quickref]: https://github.com/liran331122/WallaceAI/tree/master/code
-- Here is Video Summary:
+- Here is Video Summary: [status.md][quickref]
 
 - Here is our team information: [team.md][quickref].
 
