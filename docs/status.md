@@ -3,8 +3,7 @@ layout: default
 title: Status
 ---
 
-<div><iframe width="1280" height="720" src="https://www.youtube.com/embed/XtD2K157d3Q" frameborder="0" allowfullscreen></iframe>
-</div>
+<div><iframe width="1280" height="720" src="https://www.youtube.com/embed/XtD2K157d3Q" frameborder="0" allowfullscreen></iframe></div>
 
 ## Project Summary
 After some intense discussions, we finally decided to change our maze into a Prison_Break game or you can also call it a Room_Escape Game. We have designed a huge cube which is able to fit nine rooms in the map. Furthermore, every room is different, and they all contain either something to help the agent, Wallace to escape or prevent him from living. The agent should learn how to pick up stuffs, how to master tools, and find out the best way to escape from the prison. We will set up some zombies and traps in the room. And we will put some tools such that redstones, tnt, food, money, and ladder as well. The agent should pick up these tools to escape. For the first version of our Prison Break game, we tried to set up 9 rooms. The agent learn pick up tools and used existing tools open the doors and faces different situations. There are traps, zombies, tools and exit behind the door. 
