@@ -3,21 +3,26 @@
 Prison Break
 
 ## State:
-Iron, Door, Police, Key: (Iron, Iron), Surveillance system, arrow
+Center room, air room, lava room. zombies room, trash room, food room, money room
+Each room have different states, and have over 300+ in total
 
 ## Action:
-The agent should pick up two Irons to synthesize a key. After finding the key, the agent should use the key to open the correct door. Once meet the polices, the agent has two choices, one is using arrow shoot polices, the other one is avoiding polices and running. Moreover, the whole prison was covered by surveillance system. The surveillance system will search the agent. The agent should use the arrow break the surveillance system. If the surveillance system finds the agent, the agent will lose points.
+The agent should found a key. After finding the key, the agent should use the key to open the correct door. Once meet the polices, the agent has two choices, one is use tnt to kill polices, the other one is avoiding polices and running. The agent should find food and money, and then find its own way to the exit, and escape.
 
 ## Reward: 
-1.	Pick up one Iron: +10
-2.	Pick up two Iron and make up a key: +50
-3.	Use the key open the matched door: +100
-4.	Use arrow shoot police: +200
-5.	Pick up the arrow: +20
-6.	Break the surveillance system: +200
-7.	Escape from the prison: +500
-8.	Caught by police: -300
-9.	Founded by surveillance system: -200
-10.	Get key but could not find the correct door: -50
-11.	Fail to escape: -300 
+1.	Die from falling in the air: -1000
+2.	die from falling into lava: -2000
+3.	open the diamond door to exit: 300
+4.	open the iron door: 0
+5.	open the stone foor: -30
+6.	open the sand door: -30
+7.	climb up from the ladder: -5
+8.	Caught by zombies: -1000
+9.	use tnt to kill zombies: 80
+10.	open a planks door: -10
+11.	pick up a gold: 100
+12.     pick up a cake: 50
+13.     pick up a dirt: -100
+14.     pick up a redstone: 50
+15.     error action such as fail to open a door: -50
 	  
