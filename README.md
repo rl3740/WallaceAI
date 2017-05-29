@@ -13,3 +13,4 @@ cs175-Wallace-AI
   - _config.yml
   - proposal.md
   - team.md
+  - status.md
