@@ -15,7 +15,9 @@ Basically, we use reinenforcement learning to approach the goal. Since, the stat
 
 The map shown above, is the map of our minecraft world in malmo. Each room in the map contains different sets of states. For instance, the center room contains "tnt", "redstone", "ladder", "Sand_door", "stone_door", and "iron_door". Our algorithm is designed just for this specific map.
 
-Secondly, the MDP is quite clear in the project. From the computer's aspect, the states in this project can be infinite, because the AI can go between the room for infinite times. However, since it's not possible for the program to run, and it's not reasonable in the physical world, so I just marked the reward of changing room to be negative. Therefore, the AI will notice that it's not clever to do that frequently, so that it will not go into this kind of states' trap. Ignoring the rstates, the action is fixed, each action is corresponding to an item, which can also understand as each state has one action. For example, if the agent is in the 
+Secondly, the MDP is quite clear in the project. From the computer's aspect, the states in this project can be infinite, because the AI can go between the room for infinite times. However, since it's not possible for the program to run, and it's not reasonable in the physical world, so I just marked the reward of changing room to be negative. Therefore, the AI will notice that it's not clever to do that frequently, so that it will not go into this kind of states' trap. Ignoring the rstates, the action is fixed, each action is corresponding to an item, which can also understand as each state has one action. For example, if the agent is in the center room, for the tnt, he can only pick it up, and for any door he only has one option, which is to open it.
+
+Last but not least, the program runs as the screenshots that are provided below. From those, we can know that the algorithm was able to meet the minimum requirement that we had set up for it, which for now, is considered qualified. Nevertheless, we will try to improve it in the next few weeks.
 
 ![alt text](http://wx1.sinaimg.cn/mw1024/74cf960cgy1fg3c4n44clj21c208odgy.jpg)
 
