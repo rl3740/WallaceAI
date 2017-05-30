@@ -11,7 +11,7 @@ After some intense discussions, we finally decided to change our maze into a Pri
 ## Approach
 Basically, we use reinenforcement learning to approach the goal. Since, the states are not that many, and q-learning is the one that we use. Unlike the q-learning in homework two, we did a lot of updates from that. For example, we had adjusted them more properly fitted to our program.
 
-![alt text](https://drive.google.com/file/d/0B9Nc7X25NjKPZ0tPLW51a1lDZkk/view?usp=sharing)
+![alt text](http://wx1.sinaimg.cn/mw690/74cf960cgy1fg396x3s5tj20m80chdge.jpg)
 
 Secondly, the MDP is quite clear in the project. From the computer's aspect, the states in this project can be infinite, because the AI can go between the room for infinite times. However, since it's not possible for the program to run, and it's not reasonable in the physical world, so I just marked the reward of changing room to be negative. Therefore, the AI will notice that it's not clever to do that frequently, so that it will not go into this kind of states' trap. Ignoring the rstates, the action is fixed, each action is corresponding to an item, which can also understand as each state has one action. For example, if the agent is in the 
 
