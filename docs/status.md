@@ -16,7 +16,9 @@ Basically, we use reinenforcement learning to approach the goal. Since, the stat
 The map shown above, is the map of our minecraft world in malmo. Each room in the map contains different sets of states. For instance, the center room contains "tnt", "redstone", "ladder", "Sand_door", "stone_door", and "iron_door". Our algorithm is designed just for this specific map.
 
 Secondly, the MDP is quite clear in the project. From the computer's aspect, the states in this project can be infinite, because the AI can go between the room for infinite times. However, since it's not possible for the program to run, and it's not reasonable in the physical world, so I just marked the reward of changing room to be negative. Therefore, the AI will notice that it's not clever to do that frequently, so that it will not go into this kind of states' trap. Ignoring the rstates, the action is fixed, each action is corresponding to an item, which can also understand as each state has one action. For example, if the agent is in the 
-![alt text](http://wx1.sinaimg.cn/mw690/74cf960cgy1fg396x3s5tj20m80chdge.jpg)
+
+![alt text](http://wx1.sinaimg.cn/mw1024/74cf960cgy1fg3c4n44clj21c208odgy.jpg)
+
 ![alt text](http://wx2.sinaimg.cn/mw1024/74cf960cgy1fg3c4ormbfj21kw08njuv.jpg)
 
 ## Evaluation
