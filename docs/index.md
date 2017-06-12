@@ -2,10 +2,9 @@
 layout: default
 title:  Home
 ---
-
- # Prison Break -- Minecraft version!
+# Prison Break -- Minecraft version!
  
-  <dir>![alt text](https://i.ytimg.com/vi/O4ZVF56MEAY/maxresdefault.jpg)</dir>
+  <dir>![alt text](https://i.ytimg.com/vi/O4ZVF56MEAY/maxresdefault.jpg)<\dir>
 
 
  - Here is our proposal: [Proposal.md][quickref].
