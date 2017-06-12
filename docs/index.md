@@ -6,7 +6,9 @@ title:  Home
  
 <img src="img/maxresdefault.jpg" width="50%">
 
-Welcome to our 175 project in AI respository. Before introducing anything further, let me tell you the story of our agent, Wallace, and how it turns into a legend.
+- Welcome to our 175 project in AI respository. Before introducing anything further, let me tell you the story of our agent, Wallace, and how it turns into a legend.
+
+<img src="img/mike_wallace.jpg" width="30%">
 
 Mike Wallace, was a world famous journalist who was born in a Jewish family in Massachusetts on May 9, 1918. During his life time, he had interviewed lots of presidents throughout the world, including eight presidents of the United States, Putin, Xiaopin Deng, and Zeming Jiang. Among all of these interviews, the interview with President Jiang was one of the most famous ones, and it has been influencing generations of Chinese people until today. However, nobody knows the story that happened right before the interview.
 
