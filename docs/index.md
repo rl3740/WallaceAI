@@ -4,7 +4,7 @@ title:  Home
 ---
 # Prison Break -- Minecraft version!
  
-<img src="imgs/maxresdefault.jpg" width="50%">
+<img src="img/maxresdefault.jpg" width="50%">
   
 
  - Here is our proposal: [Proposal.md][quickref].
