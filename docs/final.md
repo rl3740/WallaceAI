@@ -11,6 +11,22 @@ Just like our subtitle indicating, the goal of our project is to ensure that the
 
 In order to reach the final goal, Wallace will keep trying to escape until he finds the best choice to get out. Even though, he is likely to fail so many times before he can actually make it, he will learn something during the process of trying and failing with a multi-layer Q-learning algorithm that we create for him.
 
+- ## States
+  Our map has 9 rooms which are distributed in a 3 * 3 matrix.
+  First row from left to right: Safe room, Hell, Money room.
+  Second row from left to right: Zombies room, Wallace room, Foods room.
+  Third row from left to right: Trash room, Lava room, Safe room.
+  Each room holds different states.
+  
+  - Wallace room: Wallace room locates at the center of the map. Agent Wallace should start his journey from this room. 
+  - Foods room: Agent Wallace gets these foods fill up its stamina to escape map.
+  - Money room: Agent Wallace gets these money to escape map.
+  - Safe room * 2: 
+  - lava room
+  - Hell
+  - Zombies room
+  - Trash room
+
 
 ## Approach
 
