@@ -14,3 +14,4 @@ cs175-Wallace-AI
   - proposal.md
   - team.md
   - status.md
+  - final.md
