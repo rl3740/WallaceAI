@@ -29,3 +29,12 @@ Therefore, he decided to break out of the prison on his own. By all means, he su
 
 Our project is trying to illustrate the story that happened inside of the prison that Wallace was in at that time. The agent is representation of Wallace.
 
+- This is the basic structure of the prison
+
+<img src="img/room_map.jpg" width="50%">
+
+- This is the overlooking of the map in Minecraft
+
+<img src="img/overview.png" width="50%">
+
+Overall, every room contains different features that either help Wallace to get out or prevent him from getting out. For more information about it, please read our status report or final report.
