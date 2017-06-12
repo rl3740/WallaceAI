@@ -7,12 +7,14 @@ title: Final Report
 
 ## Project Summary
 
+Just like our subtitle indicating, the goal of our project is to ensure that the agent, Wallace, is able to find the best and fastest way out of the prison. As we know, prisoner usually failed to escape for many times before they finally succeed. Our project implements the reinforcement learning strategy, which make the agent do the same thing as in reality. 
+
+In order to reach the final goal, Wallace will keep trying to escape until he finds the best choice to get out. Even though, he is likely to fail so many times before he can actually make it, he will learn something during the process of trying and failing with a multi-layer Q-learning algorithm that we create for him.
+
 
 ## Approach
 
-
-![alt text](http://wx1.sinaimg.cn/mw690/74cf960cgy1fg396x3s5tj20m80chdge.jpg)
-
+<img src="img/wallace_arrest.png" width="35%">
 
 ## Evaluation
 - Quantitative Evaluation
@@ -23,3 +25,20 @@ title: Final Report
 
 ## References
 
+- The information of Mike Wallace: https://en.wikipedia.org/wiki/Mike_Wallace
+
+- More information of Mike Wallace: http://baike.baidu.com/item/%E8%BF%88%E5%85%8B%C2%B7%E5%8D%8E%E8%8E%B1%E5%A3%AB?fromtitle=Mike+Wallace&fromid=11258487
+
+- Police arresting image: https://www.selectsr22insurance.com/10-facts-about-getting-arrested-for-dui/
+
+- Reinforcement Learning wikipedia page: https://en.wikipedia.org/wiki/Reinforcement_learning
+
+- MDP wikipedia page: https://en.wikipedia.org/wiki/Markov_decision_process
+
+- Q-learning wikipedia page: https://en.wikipedia.org/wiki/Q-learning
+
+- Article about Q-learning: http://artint.info/html/ArtInt_265.html
+
+- Piazza: https://piazza.com/class/j0lnpjwfdj4150
+
+- 
