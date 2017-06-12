@@ -3,8 +3,7 @@ layout: default
 title: Final Report
 ---
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)]
-(https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![Legend of Wallace](https://img.youtube.com/vi/XtD2K157d3Q/0.jpg)](https://www.youtube.com/watch?v=XtD2K157d3Q)
 
 ## Project Summary
 
