@@ -4,9 +4,8 @@ title:  Home
 ---
 # Prison Break -- Minecraft version!
  
-![alt text](https://i.ytimg.com/vi/O4ZVF56MEAY/maxresdefault.jpg)
+<img src="imgs/maxresdefault.jpg" width="50%">
   
-
 
  - Here is our proposal: [Proposal.md][quickref].
   [quickref]: https://github.com/liran331122/WallaceAI/blob/master/docs/proposal.md
