@@ -86,6 +86,7 @@ The main idea of this design is to explore the various kinds of choices that are
 
 <img src="img/algorithm1.png" width="60%">
 <img src="img/algorithm2.png" width="60%">
+<img src="img/algorithm3.png" width="40%">
 
 - Modify the single q-table code to double layers
 
