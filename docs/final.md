@@ -2,6 +2,7 @@
 layout: default
 title: Final Report
 ---
+## Video
 
 [![Legend of Wallace](https://img.youtube.com/vi/XtD2K157d3Q/0.jpg)](https://www.youtube.com/watch?v=XtD2K157d3Q)
 
