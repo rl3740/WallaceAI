@@ -16,7 +16,7 @@ Moreover, we have updated a lot since the status report. Last time, our goal is 
 
 ## Approach
 
-#### Some Basic Information of Our project (in case you did not read anything before)
+### Some Basic Information of Our project (in case you did not read anything before)
 
 This is the map of our Minecraft world, which is also the prison where the agent, Wallace, was locked.
 
@@ -26,35 +26,80 @@ And in the game, it looks like this:
 
 <img src="img/overview.png" width="40%">
 
-The main idea of this design is to 
+The main idea of this design is to explore the various kinds of choices that are presented to the agent. In this way, the agent does not know all the states at the beginning since different room contains different states, therefore it comes with two levels. The first one is the choices of selecting room, and the second level is the item in the room. Along with that, we have added in some random factor that might confuse the agent, which we will talk about it more in the following sections.
 
 - ### States
-  Our map has 9 rooms which are distributed in a 3 * 3 matrix.
+  Originally, Our map has 9 rooms which are distributed in a 3 * 3 matrix.
   First row from left to right: Safe room, Hell, Money room.
   Second row from left to right: Zombies room, Wallace room, Foods room.
   Third row from left to right: Trash room, Lava room, Safe room.
   Different rooms hold different states.
   
   - Wallace room: Wallace room locates at the center of the map. Agent Wallace starts his journey from this room. In this room, we put TNT, ladder and redstones on the floor. Wallace should pick up all tools in this room.
+  
+  <img src="img/center_room.png" width="30%">
+  
   - Foods room: There should be a cake in this room. Agent Wallace need to eat this cake to fill up its stamina.
+  
+  <img src="img/food_room.png" width="30%">
+  
   - Money room: There is a gold in Money room. Agent Wallace can pick up and take the gold to escape map.
+  
+  <img src="img/money_room.png" width="30%">
+  
   - Safe room * 2: This rooms are safe zone and next to the exit. Agent Wallace can escape the prison from this room.
+  
+  <img src="img/safe_room_top_left.png" width="30%">
+  <img src="img/safe_room_bottom_right.png" width="30%">
+  
   - lava room: Agent Wallace should use the ladder that picked up in the Wallace room go over the lava safely. Otherwise, lava will kill the agent Wallace. 
+  
+  <img src="img/lava_room.png" width="30%">
+  
   - Hell: Agent Wallace should use the ladder that picked up in the Wallace room go over the hell safely. Otherwise, Wallace will fell into the hell.
+  
+  <img src="img/air_room.png" width="30%">
+  
   - Zombies room: Agent Wallace should use TNT to kill zombies in this room.
+  
+  <img src="img/zombies_room.png" width="30%">
+  
   - Trash room: This room is a trap. We set up trash room to allure agent Wallace. All the stuffs in this room is useless. Once agent Wallace picks it up in this room, Wallace will lose points.
+  
+  <img src="img/trash_room.png" width="30%">
+  
+  - Nevertheless, we have add one more room into the world, which is the mysterious room. Every time the agent perforces teleport command, there is a possibility that it might be caught by the police, which they will send him to the mysterious room. By doing this, it really challenges the steps and luck of the agent. Moreover, it creates a lot of troubles for our original q-learning algorithm, but we had successfully found a solution to overcome it, and we will talk about it below.
   
 - ### Game Rules
   Main purpose: Our agent Wallace picks up different tools and enter different rooms to escape the prison.
-  Rewards:
-  - Redstone: Pick up -- +10, Use and open the door -- +20;
-  - TNT: Pick up -- +10, Kill zombie -- +200;
-  - Ladder: Pick up -- +10, Use to avoid lava and hell safely -- +200;
-  - Cake: Pick up -- +10, eat -- +100;
-  - Trash: Pick up -- -10;
-  - Gold: Pick up -- +10.
+  Rewards (there are just part of the reward map, since some of the reward rules are too confusing to talk about in the report):
+  - Redstone: Pick up -- +50, Use and open the door -- -10 ~ -20;
+  - TNT: Pick up -- -60, pick up more: -30, Kill zombie -- +80; kill by zombies -- -1000
+  - Ladder: Pick up -- -1000
+  - Cake: Pick up -- +50
+  - Trash: Pick up -- -100;
+  - Gold: Pick up -- +100.
+  
+### Algorithm
+
+- First of all, our algorithm is written based on the Q-learning algorithm
+
+<img src="img/algorithm1.png" width="60%">
+<img src="img/algorithm2.png" width="60%">
+
+- Modify the single q-table code to double layers
+
+
+- Overcome the fact that the agent might be caught by the police, which creates trouble for the agent to learn with the previous version of the algorithm
+
+- Finally succeed
+
+### Machine learning
+
+In our project, we applied a lot of machine learning strategy
 
 ## Evaluation
+
 - Quantitative Evaluation
   - 
  
@@ -96,3 +141,7 @@ The main idea of this design is to
 - Minecraft Wiki: http://minecraft.gamepedia.com/Minecraft_Wiki and http://www.minecraft101.net/index.html
 
 - Introduction of MDP and reinforcement learning: https://www.cs.cmu.edu/~epxing/Class/10701-08s/Lecture/lecture27-RL.pdf
+
+- Study Wolf: https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/
+
+- 
