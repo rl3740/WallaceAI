@@ -16,16 +16,16 @@ In order to reach the final goal, Wallace will keep trying to escape until he fi
   First row from left to right: Safe room, Hell, Money room.
   Second row from left to right: Zombies room, Wallace room, Foods room.
   Third row from left to right: Trash room, Lava room, Safe room.
-  Each room holds different states.
+  Different rooms hold different states.
   
   - Wallace room: Wallace room locates at the center of the map. Agent Wallace should start his journey from this room. 
   - Foods room: Agent Wallace gets these foods fill up its stamina to escape map.
   - Money room: Agent Wallace gets these money to escape map.
-  - Safe room * 2: 
-  - lava room
-  - Hell
-  - Zombies room
-  - Trash room
+  - Safe room * 2: This rooms are safe zone, agent can escape the whole map from this room.
+  - lava room: Lava will kill the agent Wallace
+  - Hell: Wallace will fell into the hell.
+  - Zombies room: Agent Wallace should use TNT to kill zombies.
+  - Trash room: All the stuffs in this room is useless. Once agent Wallace picks it up, Wallace will lose points.
 
 
 ## Approach
