@@ -12,6 +12,11 @@ Just like our subtitle indicating, the goal of our project is to ensure that the
 
 In order to reach the final goal, Wallace will keep trying to escape until he finds the best choice to get out. Even though, he is likely to fail so many times before he can actually make it, he will learn something during the process of trying and failing with a multi-layer Q-learning algorithm that we create for him.
 
+
+## Approach
+
+<img src="img/wallace_arrest.png" width="35%">
+
 - ## States
   Our map has 9 rooms which are distributed in a 3 * 3 matrix.
   First row from left to right: Safe room, Hell, Money room.
@@ -37,11 +42,6 @@ In order to reach the final goal, Wallace will keep trying to escape until he fi
   - Cake: Pick up -- +10, eat -- +100;
   - Trash: Pick up -- -10;
   - Gold: Pick up -- +10.
-
-
-## Approach
-
-<img src="img/wallace_arrest.png" width="35%">
 
 ## Evaluation
 - Quantitative Evaluation
