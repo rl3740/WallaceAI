@@ -16,7 +16,17 @@ Moreover, we have updated a lot since the status report. Last time, our goal is 
 
 ## Approach
 
-<img src="img/wallace_arrest.png" width="35%">
+#### Some Basic Information of Our project (in case you did not read anything before)
+
+This is the map of our Minecraft world, which is also the prison where the agent, Wallace, was locked.
+
+<img src="img/room_map.jpg" width="40%">
+
+And in the game, it looks like this:
+
+<img src="img/overview.png" width="40%">
+
+The main idea of this design is to 
 
 - ### States
   Our map has 9 rooms which are distributed in a 3 * 3 matrix.
