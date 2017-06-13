@@ -18,14 +18,24 @@ In order to reach the final goal, Wallace will keep trying to escape until he fi
   Third row from left to right: Trash room, Lava room, Safe room.
   Different rooms hold different states.
   
-  - Wallace room: Wallace room locates at the center of the map. Agent Wallace should start his journey from this room. 
-  - Foods room: Agent Wallace gets these foods fill up its stamina to escape map.
-  - Money room: Agent Wallace gets these money to escape map.
-  - Safe room * 2: This rooms are safe zone, agent can escape the whole map from this room.
-  - lava room: Lava will kill the agent Wallace
-  - Hell: Wallace will fell into the hell.
-  - Zombies room: Agent Wallace should use TNT to kill zombies.
-  - Trash room: All the stuffs in this room is useless. Once agent Wallace picks it up, Wallace will lose points.
+  - Wallace room: Wallace room locates at the center of the map. Agent Wallace starts his journey from this room. In this room, we put TNT, ladder and redstones on the floor. Wallace should pick up all tools in this room.
+  - Foods room: There should be a cake in this room. Agent Wallace need to eat this cake to fill up its stamina.
+  - Money room: There is a gold in Money room. Agent Wallace can pick up and take the gold to escape map.
+  - Safe room * 2: This rooms are safe zone and next to the exit. Agent Wallace can escape the prison from this room.
+  - lava room: Agent Wallace should use the ladder that picked up in the Wallace room go over the lava safely. Otherwise, lava will kill the agent Wallace. 
+  - Hell: Agent Wallace should use the ladder that picked up in the Wallace room go over the hell safely. Otherwise, Wallace will fell into the hell.
+  - Zombies room: Agent Wallace should use TNT to kill zombies in this room.
+  - Trash room: This room is a trap. We set up trash room to allure agent Wallace. All the stuffs in this room is useless. Once agent Wallace picks it up in this room, Wallace will lose points.
+  
+- Game Rules
+  Main purpose: Our agent Wallace picks up different tools and enter different rooms to escape the prison.
+  Rewards:
+  - Redstone: Pick up -- +10, Use and open the door -- +20;
+  - TNT: Pick up -- +10, Kill zombie -- +200;
+  - Ladder: Pick up -- +10, Use to avoid lava and hell safely -- +200;
+  - Cake: Pick up -- +10, eat -- +100;
+  - Trash: Pick up -- -10;
+  - Gold: Pick up -- +10.
 
 
 ## Approach
