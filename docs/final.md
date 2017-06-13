@@ -80,3 +80,7 @@ Moreover, we have updated a lot since the status report. Last time, our goal is 
 - Q-learning code example: https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/
 
 - Reinforcement learning code example: https://github.com/tflearn/tflearn/blob/master/examples/reinforcement_learning/atari_1step_qlearning.py
+
+- Malmo tutorial: https://github.com/Microsoft/malmo
+
+- Minecraft Wiki: http://minecraft.gamepedia.com/Minecraft_Wiki
