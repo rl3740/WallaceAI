@@ -12,12 +12,13 @@ Just like our subtitle indicating, the goal of our project is to ensure that the
 
 In order to reach the final goal, Wallace will keep trying to escape until he finds the best choice to get out. Even though, he is likely to fail so many times before he can actually make it, he will learn something during the process of trying and failing with a multi-layer Q-learning algorithm that we create for him.
 
+Moreover, we have updated a lot since the status report. Last time, our goal is merely focusing on the overall performance of the system. For instance, whether the rewards of those states are feasible or not, and whether it is possible to find out the ideal solution that we expected. However, right now we are focusing on whether it can be better, and whether it can handle various kinds of crucial situation that we had made to test it. In a machine learning expert’s perspective, the AI need to have low rate of error in both training and testing tasks. I will explain it in more details in the following few sections of the report.
 
 ## Approach
 
 <img src="img/wallace_arrest.png" width="35%">
 
-- ## States
+- ### States
   Our map has 9 rooms which are distributed in a 3 * 3 matrix.
   First row from left to right: Safe room, Hell, Money room.
   Second row from left to right: Zombies room, Wallace room, Foods room.
@@ -33,7 +34,7 @@ In order to reach the final goal, Wallace will keep trying to escape until he fi
   - Zombies room: Agent Wallace should use TNT to kill zombies in this room.
   - Trash room: This room is a trap. We set up trash room to allure agent Wallace. All the stuffs in this room is useless. Once agent Wallace picks it up in this room, Wallace will lose points.
   
-- ## Game Rules
+- ### Game Rules
   Main purpose: Our agent Wallace picks up different tools and enter different rooms to escape the prison.
   Rewards:
   - Redstone: Pick up -- +10, Use and open the door -- +20;
