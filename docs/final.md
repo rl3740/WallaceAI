@@ -71,4 +71,12 @@ Moreover, we have updated a lot since the status report. Last time, our goal is 
 
 - stackoverflow: https://stackoverflow.com/
 
-- 
+- Q-learning tutorial: http://mnemstudio.org/path-finding-q-learning-tutorial.htm
+
+- MDP examples: https://isites.harvard.edu/fs/docs/icb.topic540049.files/cs181_lec03_handout.pdf
+
+- Minecraft Prison Break example: http://www.minecraftforum.net/forums/mapping-and-modding/maps/1515166-prison-break-minecraft-adventure-map
+
+- Q-learning code example: https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/
+
+- Reinforcement learning code example: https://github.com/tflearn/tflearn/blob/master/examples/reinforcement_learning/atari_1step_qlearning.py
