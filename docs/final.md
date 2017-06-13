@@ -83,4 +83,4 @@ Moreover, we have updated a lot since the status report. Last time, our goal is 
 
 - Malmo tutorial: https://github.com/Microsoft/malmo
 
-- Minecraft Wiki: http://minecraft.gamepedia.com/Minecraft_Wiki
+- Minecraft Wiki: http://minecraft.gamepedia.com/Minecraft_Wiki and http://www.minecraft101.net/index.html
