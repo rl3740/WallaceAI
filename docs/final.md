@@ -27,7 +27,7 @@ In order to reach the final goal, Wallace will keep trying to escape until he fi
   - Zombies room: Agent Wallace should use TNT to kill zombies in this room.
   - Trash room: This room is a trap. We set up trash room to allure agent Wallace. All the stuffs in this room is useless. Once agent Wallace picks it up in this room, Wallace will lose points.
   
-- Game Rules
+- ## Game Rules
   Main purpose: Our agent Wallace picks up different tools and enter different rooms to escape the prison.
   Rewards:
   - Redstone: Pick up -- +10, Use and open the door -- +20;
