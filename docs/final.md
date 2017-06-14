@@ -4,7 +4,7 @@ title: Final Report
 ---
 ## Video
 
-[![Legend of Wallace](https://img.youtube.com/vi/XtD2K157d3Q/0.jpg)](https://www.youtube.com/watch?v=XtD2K157d3Q)
+[![Legend of Wallace](https://img.youtube.com/vi/xMOVtU4xTzY/0.jpg)](https://www.youtube.com/watch?v=xMOVtU4xTzY)
 
 ## Project Summary
 
