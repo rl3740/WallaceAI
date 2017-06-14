@@ -84,27 +84,29 @@ The main idea of this design is to explore the various kinds of choices that are
   
 ### Algorithm
 
-- First of all, our algorithm is written based on the Q-learning algorithm
+- #### First of all, our algorithm is written based on the Q-learning algorithm
 
 <img src="img/algorithm1.png" width="60%">
 <img src="img/algorithm2.png" width="60%">
 <img src="img/algorithm3.png" width="40%">
 
-- Modify the single q-table code to double layers
+- #### Modify the single q-table code to double layers
 
 <img src="img/action.png" width="60%">
 
-- Overcome the fact that the agent might be caught by the police, which creates trouble for the agent to learn with the previous version of the algorithm
+- #### Overcome the fact that the agent might be caught by the police, which creates trouble for the agent to learn with the previous version of the algorithm
 
 Basically, we do something that is similar to the deep reinforcement learning. We use the double q-learning strategy to make a decision to whether the table should be updated or the clone one should be updated.
 
 <img src="img/double.png" width="60%">
 
-- Finally succeed
+When every time updating the q-table, we will have a function that check if it has triggered the mysterious room. If yes, than update the clone table; otherwise, update both. In this way, 
 
 ### Machine learning
 
-In our project, we applied a lot of machine learning strategy
+In our project, we applied a lot of machine learning strategy. For example, in the previous section, the idea of bootstrapping is applied when making the decision. We take two versions of the table into consideration, but only a small portion of the clone one. because it contains the information when the agent is caught by police and sent to the mysterious room.
+
+<img src="img/table.png" width="60%">
 
 ## Evaluation
 
@@ -113,6 +115,21 @@ In our project, we applied a lot of machine learning strategy
  
 - Qualitative Evaluation
   - 
+  
+  
+  
+  
+  
+  - The screenshot of final success of reaching the safe room that located either at the bottom right corner or the top left corner.
+    - This is the view of these two rooms from the top
+    
+      <img src="img/safe_room_top_left.png" width="30%">
+      <img src="img/safe_room_bottom_right.png" width="30%">
+      
+    - This is the screenshot of the agent
+    
+      <img src="img/success.png" width="30%">
+  
 
 ## References
 
@@ -152,4 +169,4 @@ In our project, we applied a lot of machine learning strategy
 
 - Study Wolf: https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/
 
-- 
+- Double Q-learning: http://papers.nips.cc/paper/3964-double-q-learning.pdf
