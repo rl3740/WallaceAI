@@ -129,7 +129,7 @@ In our project, we applied a lot of machine learning strategy. For example, in t
   
   - However, we improved our project, and after some time of learning, our program finally succeed
   
-    <img src="img/finally.png" width="60%">
+    <img src="img/finally2.png" width="60%">
   
   - The screenshot of final success of reaching the safe room that located either at the bottom right corner or the top left corner.
     - This is the view of these two rooms from the top
