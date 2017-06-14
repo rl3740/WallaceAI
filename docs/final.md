@@ -111,8 +111,18 @@ In our project, we applied a lot of machine learning strategy. For example, in t
 ## Evaluation
 
 - Quantitative Evaluation
-  - 
+  - Right after we increase the difficulties, our original algorithm was not able to find out the solution to that
+  
+    <img src="img/crazy.png" width="60%">
  
+  - After we implement the multi-layer strategy, we are able to get the result like this
+  
+     <img src="img/this_is.png" width="60%"> 
+     
+  - Finally, after getting the double q-learning thing, we are all set to find the maximum rewards, and that's the amount of run that the ai need to find the best solution
+  
+  <img src="img/ppp.png" width="60%">
+  
 - Qualitative Evaluation
   
   - The algorithm always begins with some very low reward action
