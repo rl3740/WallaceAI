@@ -27,6 +27,7 @@ class Wallace(object):
         """
         self.epsilon = 0.2  # chance of taking a random action instead of the best
         self.q_table = {}
+        self.q_table2 = {}
         self.n, self.alpha, self.gamma = n, alpha, gamma
         self.inventory = defaultdict(lambda: 0, {})
         self.num_items_in_inv = 0
@@ -63,47 +64,6 @@ class Wallace(object):
         self.item = all_states[self.current_room]
         self.current_action = []
 
-    # @staticmethod
-    # def get_obj_locations(agent_host):
-    #     """Queries for the object's location in the world.
-    #
-    #     As a side effect it also returns Wallace's location.
-    #     """
-    #     nearyby_obs = {}
-    #     while True:
-    #         world_state = agent_host.getWorldState()
-    #         if world_state.number_of_observations_since_last_state > 0:
-    #             msg = world_state.observations[-1].text
-    #             ob = json.loads(msg)
-    #             for ent in  ob['entities']:
-    #                 name = ent['name']
-    #                 # if name != 'Chester':
-    #                 nearyby_obs[name] = (ent['yaw'], ent['x'], ent['z'])
-    #
-    #             return nearyby_obs
-
-    # def was_item_picked(self, agent_host, item):
-    #     """Goes over the inventory observation and check if the item was picked. """
-    #     prev_item_count = self.inventory[item]
-    #     while True:
-    #         world_state = agent_host.getWorldState()
-    #         if world_state.number_of_observations_since_last_state > 0:
-    #             msg = world_state.observations[-1].text
-    #             ob = json.loads(msg)
-    #
-    #             for i in xrange(9):
-    #                 key = 'InventorySlot_%d_item' % i
-    #                 if key in ob:
-    #                     inv_item = ob[key]
-    #                     inv_counts = ob['InventorySlot_%d_size' % i]
-    #
-    #                     if inv_item == item and inv_counts > prev_item_count:
-    #                         return True
-    #                 else:
-    #                     break
-    #
-    #         return False
-
     def teleport(self, agent_host, teleport_x, teleport_z):
         """Directly teleport to a specific position."""
         tp_command = "tp " + str(teleport_x)+ " 12 " + str(teleport_z)
@@ -128,25 +88,28 @@ class Wallace(object):
 
         Will not pick up the item if Chester has more than 3 items in his mouth :)
         """
-        # if self.num_items_in_inv > inventory_limit:
-        #     return
-        # # teleport
-        # obj_locs = self.get_obj_locations(agent_host)
-        # print "object_location: ", obj_locs
-        # my_yaw, my_x, my_z = obj_locs['Wallace']
-        # obj_yaw, obj_x, obj_z = obj_locs[item_to_pick]
+
         object_location = item_locations[item_to_pick]
         self.teleport(agent_host, object_location[0], object_location[1])
         time.sleep(0.3)  # Letting the host pick up on the things that were picked up
-        # while True:
-        #     if self.was_item_picked(agent_host, item_to_pick) or item_to_pick not in obj_locs:
-        #         break
-        #
-        # time.sleep(0.1)  # Letting the host pick up on the things that were picked up
 
-        self.update_inventory(item_to_pick, "succeed")
-        self.num_items_in_inv += 1
-        #self.update_item(item_to_pick)
+        if item_to_pick not in self.inventory.keys():
+            self.update_inventory(item_to_pick, "succeed")
+            self.num_items_in_inv += 1
+        else:
+            if item_to_pick == "tnt":
+                self.update_inventory("more_tnt", "succeed")
+                self.num_items_in_inv += 1
+            elif item_to_pick == "cake":
+                self.update_inventory("more_cake", "succeed")
+                self.num_items_in_inv += 1
+            elif item_to_pick == "gold_block":
+                self.update_inventory("more_gold_block", "succeed")
+                self.num_items_in_inv += 1
+            elif item_to_pick == "dirt":
+                self.update_inventory("more_dirt", "succeed")
+                self.num_items_in_inv += 1
+        # self.update_item(item_to_pick)
 
 # ------------------------------ Still Working -------------------------------------------
     def update_inventory(self, action, result, option = "none"):
@@ -213,7 +176,7 @@ class Wallace(object):
                 self.update_status("trash_room")
             elif action == "diamond_block":
                 self.teleport(agent_host, 25, 5)
-                #self.update_status("safe_room")
+                # self.update_status("safe_room")
                 self.end_action(agent_host)
             elif action == "sand":
                 self.teleport(agent_host, 15, 15)
@@ -228,7 +191,7 @@ class Wallace(object):
                 self.update_status("center_room")
             elif action == "diamond_block":
                 self.teleport(agent_host, 5, 25)
-                #self.update_status("safe_room")
+                # self.update_status("safe_room")
                 self.end_action(agent_host)
         elif self.current_room == "trash_room":
             self.update_inventory(action, "Succeed")
@@ -356,6 +319,7 @@ class Wallace(object):
     def run(self, agent_host):
         """Learns the process to compile the best gift for dad. """
         S, A, R = deque(), deque(), deque()
+        S2, A2, R2 = deque(), deque(), deque()
         present_reward = 0
         time.sleep(1)
         done_update = False
