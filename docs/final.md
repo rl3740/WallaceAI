@@ -139,6 +139,8 @@ In our project, we applied a lot of machine learning strategy. For example, in t
 
 - Police arresting image: https://www.selectsr22insurance.com/10-facts-about-getting-arrested-for-dui/
 
+- Idea inspiration video: https://www.youtube.com/watch?v=xn7W6kucwK4
+
 - Reinforcement Learning wikipedia page: https://en.wikipedia.org/wiki/Reinforcement_learning
 
 - MDP wikipedia page: https://en.wikipedia.org/wiki/Markov_decision_process
