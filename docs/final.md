@@ -117,10 +117,17 @@ In our project, we applied a lot of machine learning strategy. For example, in t
   - 
   
   
+  - The algorithm always begins with some very low reward action
   
+    <img src="img/beginning.png" width="60%">
+    
+  - Sometimes, the agent might be caught at the beginning due to the randomness, that is the screenshot of it is caught at the console
+   
+    <img src="img/die_beginning.png" width="60%">
   
+  - However, after some time of learning, 
   
-  - We supposed agent Wallace should exit prison from the safe room that located either at the bottom right corner or the top left corner. Here is the screenshot of final success of reaching the safe room.
+  - The screenshot of final success of reaching the safe room that located either at the bottom right corner or the top left corner.
     - This is the view of these two rooms from the top
     
       <img src="img/safe_room_top_left.png" width="30%">
@@ -138,8 +145,6 @@ In our project, we applied a lot of machine learning strategy. For example, in t
 - More information of Mike Wallace: http://baike.baidu.com/item/%E8%BF%88%E5%85%8B%C2%B7%E5%8D%8E%E8%8E%B1%E5%A3%AB?fromtitle=Mike+Wallace&fromid=11258487
 
 - Police arresting image: https://www.selectsr22insurance.com/10-facts-about-getting-arrested-for-dui/
-
-- Idea inspiration video: https://www.youtube.com/watch?v=xn7W6kucwK4
 
 - Reinforcement Learning wikipedia page: https://en.wikipedia.org/wiki/Reinforcement_learning
 
@@ -172,9 +177,3 @@ In our project, we applied a lot of machine learning strategy. For example, in t
 - Study Wolf: https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/
 
 - Double Q-learning: http://papers.nips.cc/paper/3964-double-q-learning.pdf
-
-- Double Q-learning code example: https://github.com/DavidSanwald/DDQN
-
-- Q-learning vs other algorithms: http://www.cse.unsw.edu.au/~cs9417ml/RL1/algorithms.html
-
-- Comparing Deep reinforcement learning: https://blog.acolyer.org/2016/10/10/asynchronous-methods-for-deep-reinforcement-learning/
