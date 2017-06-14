@@ -120,7 +120,7 @@ In our project, we applied a lot of machine learning strategy. For example, in t
   
   
   
-  - The screenshot of final success of reaching the safe room that located either at the bottom right corner or the top left corner.
+  - We supposed agent Wallace should exit prison from the safe room that located either at the bottom right corner or the top left corner. Here is the screenshot of final success of reaching the safe room.
     - This is the view of these two rooms from the top
     
       <img src="img/safe_room_top_left.png" width="30%">
