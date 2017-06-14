@@ -171,6 +171,8 @@ In our project, we applied a lot of machine learning strategy. For example, in t
 
 - Double Q-learning: http://papers.nips.cc/paper/3964-double-q-learning.pdf
 
+- Double Q-learning code example: https://github.com/DavidSanwald/DDQN
+
 - Q-learning vs other algorithms: http://www.cse.unsw.edu.au/~cs9417ml/RL1/algorithms.html
 
 - Comparing Deep reinforcement learning: https://blog.acolyer.org/2016/10/10/asynchronous-methods-for-deep-reinforcement-learning/
