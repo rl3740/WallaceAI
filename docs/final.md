@@ -114,8 +114,6 @@ In our project, we applied a lot of machine learning strategy. For example, in t
   - 
  
 - Qualitative Evaluation
-  - 
-  
   
   - The algorithm always begins with some very low reward action
   
@@ -125,7 +123,13 @@ In our project, we applied a lot of machine learning strategy. For example, in t
    
     <img src="img/die_beginning.png" width="60%">
   
-  - However, after some time of learning, 
+  - Before we solved the case that the agent is afraid to go anywhere due to the existence of the mysterious room, the program will last like this for long time. because it got caught in the food room or the zombies room
+  
+    <img src="img/sometime.png" width="60%">
+  
+  - However, we improved our project, and after some time of learning, our program finally succeed
+  
+    <img src="img/finally.png" width="60%">
   
   - The screenshot of final success of reaching the safe room that located either at the bottom right corner or the top left corner.
     - This is the view of these two rooms from the top
