@@ -170,3 +170,7 @@ In our project, we applied a lot of machine learning strategy. For example, in t
 - Study Wolf: https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/
 
 - Double Q-learning: http://papers.nips.cc/paper/3964-double-q-learning.pdf
+
+- Q-learning vs other algorithms: http://www.cse.unsw.edu.au/~cs9417ml/RL1/algorithms.html
+
+- Comparing Deep reinforcement learning: https://blog.acolyer.org/2016/10/10/asynchronous-methods-for-deep-reinforcement-learning/
