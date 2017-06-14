@@ -70,6 +70,8 @@ The main idea of this design is to explore the various kinds of choices that are
   
   - Nevertheless, we have add one more room into the world, which is the mysterious room. Every time the agent perforces teleport command, there is a possibility that it might be caught by the police, which they will send him to the mysterious room. By doing this, it really challenges the steps and luck of the agent. Moreover, it creates a lot of troubles for our original q-learning algorithm, but we had successfully found a solution to overcome it, and we will talk about it below.
   
+  - Last but not least, we also modify the state a bit in an effort to increase the difficulties. Base on the real fact that carry too much money or food will slow down the speed and lower the possibilities to escape, we add more gold, cake, and some not useful stuffs into the rooms. Just to clarify, we set the reward of picking up a piece of gold + 100. However, we have added that if there is more than one gold on the body, than it will bring the agent a negative reward -50.
+  
 - ### Game Rules
   Main purpose: Our agent Wallace picks up different tools and enter different rooms to escape the prison.
   Rewards (there are just part of the reward map, since some of the reward rules are too confusing to talk about in the report):
@@ -90,8 +92,13 @@ The main idea of this design is to explore the various kinds of choices that are
 
 - Modify the single q-table code to double layers
 
+<img src="img/action.png" width="60%">
 
 - Overcome the fact that the agent might be caught by the police, which creates trouble for the agent to learn with the previous version of the algorithm
+
+Basically, we do something that is similar to the deep reinforcement learning. We use the double q-learning strategy to make a decision to whether the table should be updated or the clone one should be updated.
+
+<img src="img/double.png" width="60%">
 
 - Finally succeed
 
